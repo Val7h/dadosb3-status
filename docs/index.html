@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status do Dados B3 · Dados B3 status</title>
+<style>
+:root{--bg:#fff;--fg:#1a1d21;--mut:#5b6470;--lin:#d9dde3;--ok:#127a3a;--falha:#b3261e;--cartao:#f5f7fa}
+@media (prefers-color-scheme:dark){:root{--bg:#101316;--fg:#e8eaed;--mut:#9aa3ad;--lin:#2a3036;--ok:#4cc27a;--falha:#ff8a80;--cartao:#181c20}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:60rem;margin:0 auto;padding:1rem}
+h1{font-size:1.6rem;margin:.5rem 0} h2{font-size:1.2rem;margin:2rem 0 .5rem}
+.geral{font-size:1.3rem;font-weight:700;padding:.8rem 1rem;border-radius:.6rem;background:var(--cartao);border-left:.4rem solid var(--ok)}
+.geral.falha{border-left-color:var(--falha)} .ok{color:var(--ok);font-weight:600} .falha{color:var(--falha);font-weight:600}
+table{border-collapse:collapse;width:100%} th,td{padding:.45rem .6rem;border-bottom:1px solid var(--lin);text-align:left;vertical-align:top}
+.n{text-align:right;white-space:nowrap} tr.tot th,tr.tot td{font-weight:700}
+.aviso{background:var(--cartao);padding:.8rem 1rem;border-radius:.6rem;color:var(--mut)} .mini{color:var(--mut);font-size:.9rem}
+@media (max-width:40rem){.rolar{overflow-x:auto}}
+</style>
+</head>
+<body>
+<main>
+<h1><span lang="pt-BR">Status do Dados B3</span><br><span lang="en">Dados B3 status</span></h1>
+<p class="geral ok"><span lang="pt-BR">Tudo funcionando</span><br><span lang="en">All systems operational</span></p>
+<p class="aviso"><span lang="pt-BR">Medido de fora do servidor do Dados B3. Dados da B3 e da CVM têm a própria fonte; veja /saude do site para a atualização dos dados.</span><br><span lang="en">Measured from outside the Dados B3 server. B3 and CVM data have their own source; see the site&#x27;s /saude for data freshness.</span></p>
+<h2><span lang="pt-BR">Estado atual e disponibilidade</span><br><span lang="en">Current state and availability</span></h2>
+<div class="rolar"><table>
+<thead><tr><th scope="col"><span lang="pt-BR">Verificação</span><br><span lang="en">Check</span></th><th scope="col"><span lang="pt-BR">Agora</span><br><span lang="en">Now</span></th><th scope="col" class="n"><span lang="pt-BR">24 h</span><br><span lang="en">24 h</span></th><th scope="col" class="n"><span lang="pt-BR">7 dias</span><br><span lang="en">7 days</span></th><th scope="col" class="n"><span lang="pt-BR">30 dias</span><br><span lang="en">30 days</span></th></tr></thead>
+<tbody>
+<tr><th scope="row"><span lang="pt-BR">Saúde dos dados (/saude)</span><br><span lang="en">Data health (/saude)</span></th><td class="ok"><span lang="pt-BR">No ar</span><br><span lang="en">Up</span></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+<tr><th scope="row"><span lang="pt-BR">Página inicial</span><br><span lang="en">Home page</span></th><td class="ok"><span lang="pt-BR">No ar</span><br><span lang="en">Up</span></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+<tr><th scope="row"><span lang="pt-BR">Página de ação (PETR4)</span><br><span lang="en">Stock page (PETR4)</span></th><td class="ok"><span lang="pt-BR">No ar</span><br><span lang="en">Up</span></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+<tr><th scope="row"><span lang="pt-BR">Página de FII (MXRF11)</span><br><span lang="en">FII page (MXRF11)</span></th><td class="ok"><span lang="pt-BR">No ar</span><br><span lang="en">Up</span></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+<tr><th scope="row"><span lang="pt-BR">Mapa do site (sitemap.xml)</span><br><span lang="en">Sitemap (sitemap.xml)</span></th><td class="ok"><span lang="pt-BR">No ar</span><br><span lang="en">Up</span></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+<tr><th scope="row"><span lang="pt-BR">Conector de IA (/mcp)</span><br><span lang="en">AI connector (/mcp)</span></th><td class="ok"><span lang="pt-BR">No ar</span><br><span lang="en">Up</span></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+<tr class="tot"><th scope="row"><span lang="pt-BR">Todas as verificações juntas (basta uma falhar)</span><br><span lang="en">All checks together (any one failing counts)</span></th><td></td><td class="n">100,00 %</td><td class="n">100,00 %</td><td class="n">100,00 %</td></tr>
+</tbody></table></div>
+<h2><span lang="pt-BR">Últimos 20 incidentes</span><br><span lang="en">Last 20 incidents</span></h2>
+<div class="rolar"><p><span lang="pt-BR">Nenhum incidente registrado.</span><br><span lang="en">No incidents recorded.</span></p></div>
+<p class="mini"><span lang="pt-BR">Uma verificação a cada 5 minutos, de fora do Render; 2 tentativas e 20 s de espera por endereço. Um incidente junta as falhas seguidas da mesma verificação.</span><br>
+<span lang="en">One check every 5 minutes, from outside Render; 2 tries and a 20 s wait per address. An incident groups consecutive failures of the same check.</span></p>
+<p class="mini"><!--GERADO-->2026-10-23 12:00 UTC<!--/GERADO--></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+data_utc,url,codigo,tempo_ms,motivo
+2026-10-22T07:30:12Z,https://dadosb3.com/sitemap.xml,502,1204,HTTP 502
+2026-10-22T07:35:10Z,https://dadosb3.com/sitemap.xml,502,980,HTTP 502
+2026-10-22T07:35:11Z,https://dadosb3.com/acoes/PETR4,0,20003,"sem resposta (rede ou tempo esgotado)"
+2026-10-22T07:40:09Z,https://dadosb3.com/sitemap.xml,503,300,HTTP 503
+2026-10-20T03:05:00Z,https://dadosb3.com/saude,200,850,"último pregão há 8 dias (limite 6)"
+2026-10-20T03:10:00Z,https://dadosb3.com/saude,200,820,"último pregão há 8 dias (limite 6)"
+2026-10-10T12:00:00Z,https://dadosb3.com/mcp,500,400,HTTP 500
+2026-10-23T11:57:00Z,https://dadosb3.com/,502,700,"HTTP 502"
