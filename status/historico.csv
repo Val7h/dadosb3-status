@@ -1,1 +1,7 @@
 data_utc,url,codigo,tempo_ms,motivo
+2026-11-22T21:11:00Z,https://dadosb3.com/saude,502,311,HTTP 502
+2026-11-22T21:11:00Z,https://dadosb3.com/,502,172,HTTP 502
+2026-11-22T21:11:00Z,https://dadosb3.com/acoes/PETR4,502,164,HTTP 502
+2026-11-22T21:11:00Z,https://dadosb3.com/fiis/mxrf11,502,182,HTTP 502
+2026-11-22T21:11:00Z,https://dadosb3.com/sitemap.xml,502,127,HTTP 502
+2026-11-22T21:11:00Z,https://dadosb3.com/mcp,502,179,HTTP 502
